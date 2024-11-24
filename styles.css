@@ -248,12 +248,73 @@ a {
 
 
 @media (max-width: 768px) {
+    body {
+        padding-left: 20px; /* Reduce padding for mobile */
+        padding-right: 20px; /* Add right padding for mobile */
+    }
+
+    nav {
+        height: auto; /* Allow nav height to adjust */
+        text-align: center; /* Center nav items */
+    }
+
+    nav ul {
+        display: flex; /* Use flexbox for navigation */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
     nav ul li {
-        margin: 0 15px;
+        margin: 10px 0; /* Adjust margin for mobile */
     }
 
     .sidebar {
-        position: static;
-        margin-bottom: 20px;
+        width: 100%; /* Make sidebar full width */
+        position: static; /* Allow sidebar to flow with content */
+        padding: 10px 0; /* Reduce padding */
+    }
+
+    .image-container {
+        position: relative; /* Change to relative for better flow */
+        top: 0; /* Reset top position */
+        right: 0; /* Reset right position */
+        text-align: center; /* Center image */
+    }
+
+    .floating-image {
+        max-width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reduce heading size for mobile */
+    }
+
+    h3 {
+        font-size: 2rem; /* Reduce heading size for mobile */
+    }
+
+    h4 {
+        font-size: 1.5rem; /* Reduce heading size for mobile */
+    }
+
+    .project {
+        margin: 20px 0; /* Adjust margin for projects */
+        position: relative; /* Change to relative for better flow */
+    }
+
+    #projects {
+        grid-template-columns: 1fr; /* Stack projects in a single column */
+        padding: 10px 0; /* Reduce padding */
+    }
+
+    .button {
+        width: 100%; /* Make buttons full-width */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .sidebar img {
+        width: 24px; /* Adjust icon size for mobile */
+        height: 24px; /* Adjust icon size for mobile */
     }
 }
